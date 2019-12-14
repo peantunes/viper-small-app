@@ -1,0 +1,6 @@
+framework module Pods_ClearSale_ClearSaleUITests {
+  umbrella header "Pods-ClearSale-ClearSaleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

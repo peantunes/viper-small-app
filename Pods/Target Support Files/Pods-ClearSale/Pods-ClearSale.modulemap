@@ -1,0 +1,6 @@
+framework module Pods_ClearSale {
+  umbrella header "Pods-ClearSale-umbrella.h"
+
+  export *
+  module * { export * }
+}

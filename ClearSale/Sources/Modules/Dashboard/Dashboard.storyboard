@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Q7-UP-s9f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard-->
+        <scene sceneID="hzX-Oj-293">
+            <objects>
+                <viewController title="Dashboard" id="azb-Cx-jK6" customClass="DashboardViewController" customModule="ClearSale" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v9Q-5c-C4r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDH-jS-KPc" customClass="ProgressView" customModule="ClearSale" customModuleProvider="target">
+                                <rect key="frame" x="41.5" y="309.5" width="331" height="331"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="b2c-DO-blL">
+                                        <rect key="frame" x="82.5" y="82.5" width="166" height="166"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your credit score is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPP-4G-Ppu">
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="51" translatesAutoresizingMaskIntoConstraints="NO" id="VyM-l4-4Fl">
+                                                <rect key="frame" x="0.0" y="34.5" width="166" height="97"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="81"/>
+                                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="out of 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhC-Py-EGJ">
+                                                <rect key="frame" x="0.0" y="145.5" width="166" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="b2c-DO-blL" secondAttribute="height" multiplier="1:1" id="Dv8-xb-iiH"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="b2c-DO-blL" firstAttribute="width" secondItem="ZDH-jS-KPc" secondAttribute="width" multiplier="0.5" id="3WI-BY-cEn"/>
+                                    <constraint firstItem="b2c-DO-blL" firstAttribute="centerY" secondItem="ZDH-jS-KPc" secondAttribute="centerY" id="KhO-Ox-ZF4"/>
+                                    <constraint firstAttribute="width" secondItem="ZDH-jS-KPc" secondAttribute="height" multiplier="1:1" id="Usz-zp-UlI"/>
+                                    <constraint firstItem="b2c-DO-blL" firstAttribute="centerX" secondItem="ZDH-jS-KPc" secondAttribute="centerX" id="WCq-rI-cV9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZDH-jS-KPc" firstAttribute="width" secondItem="v9Q-5c-C4r" secondAttribute="width" multiplier="0.8" id="JpN-Ll-fr2"/>
+                            <constraint firstItem="ZDH-jS-KPc" firstAttribute="centerY" secondItem="X3K-z4-yYU" secondAttribute="centerY" id="LgR-eP-UYv"/>
+                            <constraint firstItem="ZDH-jS-KPc" firstAttribute="centerX" secondItem="X3K-z4-yYU" secondAttribute="centerX" id="Qcw-3O-KOn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X3K-z4-yYU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dashboard" id="kQ3-6l-aoh"/>
+                    <connections>
+                        <outlet property="creditScoreLineLabel" destination="FPP-4G-Ppu" id="SC8-uL-vWU"/>
+                        <outlet property="outOfLabel" destination="lhC-Py-EGJ" id="GxO-Qh-X3W"/>
+                        <outlet property="totalScoreLabel" destination="VyM-l4-4Fl" id="iVi-lv-ZpS"/>
+                        <outlet property="viewContainer" destination="ZDH-jS-KPc" id="2wU-5t-fAw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCG-Wa-06Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.7101449275362" y="63.616071428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="96O-hD-WX9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Q7-UP-s9f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XwC-dm-41x">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="azb-Cx-jK6" kind="relationship" relationship="rootViewController" id="dpP-lD-KIn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ko-8z-KMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169.56521739130437" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+</document>
